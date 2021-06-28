@@ -1,7 +1,6 @@
 import { Api } from './services/api';
 
 import config from './config.json';
-
 export class MyApp {
   private prices = {};
 

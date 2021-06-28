@@ -1,9 +1,111 @@
-<div class="panels">
-    <div class="panel"><h4>Bitcoin</h4> ${prices.bitcoin.usd}</div>
-    <div class="panel"><h4>Ethereum</h4> ${prices.ethereum.usd}</div>
-    <div class="panel"><h4>Tether</h4> ${prices.tether.usd}</div>
-    <div class="panel"><h4>Binance Coin</h4> ${prices.binancecoin.usd}</div>
-    <div class="panel"><h4>Dogecoin</h4> ${prices.dogecoin.usd}</div>
-    <div class="panel"><h4>Cardano</h4> ${prices.cardano.usd}</div>
-    <div class="panel"><h4>Ripple</h4> ${prices.ripple.usd}</div>
+<import from="./resources/value-converters/currency"></import>
+
+<div class="container">
+    <h1 class="mt-5">Crypto Prices</h1>
+    <table class="table table-striped mt-5">
+        <thead class="table-dark">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Price (USD)</th>
+            </tr>
+          </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="d-flex flex-column">
+                        <strong class="pl-2">Bitcoin</strong>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div><strong>${prices.bitcoin.usd | currency}</strong></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <strong class="pl-2">Ethereum</strong>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div><strong>${prices.ethereum.usd | currency}</strong></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <strong class="pl-2">Tether</strong>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div><strong>${prices.tether.usd | currency}</strong></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <strong class="pl-2">Binance Coin</strong>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div><strong>${prices.binancecoin.usd | currency}</strong></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <strong class="pl-2">Dogecoin</strong>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div><strong>${prices.dogecoin.usd | currency}</strong></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <strong class="pl-2">Cardano</strong>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div><strong>${prices.cardano.usd | currency}</strong></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center">
+                            <strong class="pl-2">Ripple</strong>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="d-flex flex-column">
+                        <div><strong>${prices.ripple.usd | currency}</strong></div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
