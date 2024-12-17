@@ -1,6 +1,9 @@
 import { Api } from './services/api';
 
 import config from './config.json';
+import { inject } from 'aurelia';
+
+@inject(Api)
 export class MyApp {
   private prices = {};
 

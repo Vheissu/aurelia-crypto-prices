@@ -1,7 +1,9 @@
 import { IHttpClient } from '@aurelia/fetch-client';
+import { inject } from 'aurelia';
 
+@inject(IHttpClient)
 export class Api {
-    constructor(@IHttpClient private http: IHttpClient) {
+    constructor(private http: IHttpClient) {
         this.http.configure(c => {
             c.withBaseUrl('https://api.coingecko.com/api/v3/');
 
